@@ -11,8 +11,7 @@
     <!-- CSS font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="style.css" />
-    
+    <link rel="stylesheet" href="style.css" />    
 </head>
 
 <body>
@@ -26,87 +25,35 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-        </nav>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div>
-          <h1>Estamos en Generation es ...</h1>
-          <p>
-            Es una experiencia inolvidable!
-          </p>
-          <p>
-            <a href="http://mexico.generation.org" 
-            target="_blank"
-            class="btn btn-success">
-              visita Generation</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div>
-        <row>
-            <!-- descricion html -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>HTML</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam, ab commodi maiores id quibusdam impedit libero, veniam ratione dolore voluptas voluptatum distinctio reprehenderit aliquid omnis, mollitia dolor optio quas?</p>
-                    <p><a href="google.com" class="btn btn-success" target="_blank" ><i class="fa-sor"></i> Aprende sobre todo</a></p>
-
-                </div>
-                <div class="col-md-4">
-                    <h2>CSS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam, ab commodi maiores id quibusdam impedit libero, veniam ratione dolore voluptas voluptatum distinctio reprehenderit aliquid omnis, mollitia dolor optio quas?
-                    <a href="google.com" class="btn btn-success" target="_blank">Aprende sobre todo</a></p>
-                
-                </div>
-                <div class="col-md-4"><h2>JS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam, ab commodi maiores id quibusdam impedit libero, veniam ratione dolore voluptas voluptatum distinctio reprehenderit aliquid omnis, mollitia dolor optio quas?
-                    <a href="google.com" class="btn btn-success" target="_blank">Aprende sobre todo</a></p>
-                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Música</a></li>
+                            <li><a class="dropdown-item" href="#">Fotos</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Recuerdos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Generation</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
             </div>
         </div>
     </nav>
@@ -115,15 +62,12 @@
         <!-- Descripción Generation -->
         <div class="row">
             <div class="col">
-                <h1>Estar en Generation</h1>
+                <h1>Estar en <span id="generation">Generation</span>  es...</h1>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                    voluptas cumque unde reiciendis adipisci numquam ad qui minima
-                    explicabo eius eveniet officia neque, molestias culpa impedit. Porro
-                    explicabo molestiae expedita.
+                    Tener que buscar muchos vestuarios para los viernes temáticos.
                 </p>
-                <p>
-                    <a href="https://mexico.generation.org/" target="_blank" class="btn btn-success">Visita
+                <p onclick="colorTitulo()">
+                    <a href="#" target="" class="btn btn-success">Visita
                         Generation</a>
                 </p>
             </div>
@@ -170,6 +114,7 @@
 
     <!-- JS de bootstrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
